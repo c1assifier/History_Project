@@ -1,0 +1,228 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: var(--color-bg-mid);
+}
+
+.card {
+  position: relative;
+  background-color: var(--color-bg-light);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--box-shadow-lg);
+  padding: 32px;
+  max-width: var(--max-width-card);
+  max-height: var(--max-height-card);
+  width: 100%;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.compactCard {
+  max-width: 800px;
+}
+
+.wideCard {
+  max-width: 1100px;
+}
+
+.ultraWideCard {
+  max-width: clamp(1200px, 90vw, 1600px);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.topSection {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imageBlock {
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.image {
+  max-width: var(--max-width-image);
+  width: 100%;
+  max-height: var(--max-width-image);
+  border-radius: var(--radius-lg);
+  object-fit: contain;
+  box-shadow: var(--box-shadow-md);
+}
+
+.caption {
+  font-size: 12px;
+  color: var(--color-caption);
+  text-align: center;
+  font-style: italic;
+}
+
+.description {
+  flex: 1;
+  min-width: 0;
+  text-indent: 1.5em;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.description h3 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.description ul {
+  margin-left: 25px;
+  margin-bottom: 10px;
+  text-indent: 0;
+}
+
+.descriptionPages {
+  flex: 1;
+  min-width: 0;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.bulletPointsOne {
+  padding: 30px 0 10px 30px;
+}
+
+.tableWrapper {
+  display: block;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.table {
+  width: auto;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  margin: 0 auto;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--color-table-border);
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.table th {
+  background-color: var(--color-table-header);
+  font-weight: 600;
+}
+
+.backButton {
+  align-self: flex-start;       /* 🔹 не растягивается */
+  width: auto;                  /* 🔹 автоширина */
+  background-color: var(--color-accent-hover);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--box-shadow-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.backButton:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg-light);
+  box-shadow: var(--box-shadow-hover);
+}
+
+
+
+.scrollableDescription {
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+.scrollableDescription::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+.scrollableDescription::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollableDescription::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background var(--transition-med);
+}
+
+.scrollableDescription::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover);
+}
+
+/* // ==================== // */
+
+.cycleButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0.2rem;
+  z-index: 10;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.cycleButton:hover {
+  color: var(--color-text);
+  transform: scale(1.1);
+}
+
+.themeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0.2rem;
+  z-index: 10;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.themeButton:hover {
+  color: var(--color-text);
+  transform: scale(1.1);
+}
+
+

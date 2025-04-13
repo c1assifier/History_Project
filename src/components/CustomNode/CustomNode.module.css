@@ -1,0 +1,63 @@
+.node {
+  position: relative;
+  padding: 12px 20px;
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background: var(--color-tooltip-bg);
+  color: var(--color-text);
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: var(--box-shadow-sm);
+  white-space: normal;
+  width: 200px;
+  line-height: 1.4;
+  transition: opacity var(--transition-fast);
+}
+
+/* Появление снизу */
+.tooltipBottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+/* Появление сверху */
+.tooltipTop {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+
+/* Слева */
+.tooltipLeft {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+}
+
+/* Справа */
+.tooltipRight {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+}

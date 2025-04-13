@@ -1,0 +1,78 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+
+  /* Цвета */
+  --color-bg-dark: #0e0e10;
+  --color-bg-mid: #1a1a1a;
+  --color-bg-light: #2a2a2a;
+  --color-text: #ffffff;
+  --color-text-muted: #aaa;
+  --color-border: #444;
+  --color-accent: #00ffff;
+  --color-accent-hover: #00ffff44;
+  --color-tooltip-bg: #222;
+  --color-caption: #ccc;
+  --color-shadow: rgba(152, 152, 152, 0.4);
+  --color-table-header: #333;
+  --color-table-border: #444;
+  --color-hover-bg: #ffffff22;
+  --color-hover-border: #ffffffaa;
+  --color-scrollbar-thumb: linear-gradient(180deg, #555, #888);
+  --color-scrollbar-thumb-hover: linear-gradient(180deg, #666, #aaa);
+
+  /* Радиусы */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Тени */
+  --box-shadow-sm: 0 0 4px #000;
+  --box-shadow-md: 0 0 8px rgba(255, 255, 255, 0.2);
+  --box-shadow-lg: 0 0 20px var(--color-shadow);
+  --box-shadow-hover: 0 0 12px #ffffff66;
+
+  /* Размеры */
+  --max-width-image: 400px;
+  --max-width-card: 940px;
+  --max-height-card: 95vh;
+  --scrollbar-width: 8px;
+
+  /* Прочее */
+  --transition-fast: 0.2s ease;
+  --transition-med: 0.3s ease;
+}
+
+.light-theme {
+  --color-bg-dark: #e0e0e0;
+  --color-bg-mid: #f4f4f4;
+  --color-bg-light: #fafafa;
+  --color-text: #1c1c1c;
+  --color-text-muted: #555;
+  --color-border: #aaa;
+  --color-accent: #007acc;
+  --color-accent-hover: #d0ecff;
+  --color-tooltip-bg: #eaeaea;
+  --color-caption: #666;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-table-header: #f1f1f1;
+  --color-table-border: #ccc;
+  --color-hover-bg: #0000000a;
+  --color-hover-border: #00000022;
+  --color-scrollbar-thumb: linear-gradient(180deg, #bbb, #999);
+  --color-scrollbar-thumb-hover: linear-gradient(180deg, #888, #777);
+
+  --box-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --box-shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.25);
+  --box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+

@@ -1,0 +1,59 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+  padding-left: 8px;
+}
+
+.track {
+  background: var(--color-bg-mid);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 7000px;
+  margin-bottom: 100px;
+}
+
+.years {
+  position: relative;
+  height: 25px; /* можно настроить под нужный размер */
+}
+
+.year {
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-text);
+  padding: 4px 8px;
+  background: #2c2c2c;
+  border: 1px solid #555;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.year:hover {
+  background: var(--color-hover-bg);
+  border-color: var(--color-hover-border);
+  color: var(--color-text);
+  box-shadow: var(--box-shadow-hover);
+  transform: scale(1.08);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.selected {
+  background-color: #ffffff;
+  color: black;
+  border-radius: var(--radius-md);
+}
