@@ -25,7 +25,8 @@ const EngineMapContent = () => {
     const saved = sessionStorage.getItem('viewport');
     if (saved) {
       const { x, y, zoom } = JSON.parse(saved);
-      instance.setViewport({ x, y, zoom }, { duration: 500 });
+      //* Duration - палавность возврата камеры
+      instance.setViewport({ x, y, zoom }, { duration: 0 });
       setViewport({ x, y, zoom });
     }
   }, [instance]);

@@ -138,7 +138,7 @@ export const edges: Edge[] = [
     id: 'РД-0105 (8Д714, РО-5) РД-0109 (8Д719, РО-7)',
     source: 'РД-0105 (8Д714, РО-5)',
     target: 'РД-0109 (8Д719, РО-7)',
-    targetHandle: 'right',
+    targetHandle: 'left',
     sourceHandle: 'right',
     type: 'smoothstep',
     animated: true,

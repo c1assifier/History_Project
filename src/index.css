@@ -76,3 +76,11 @@
   font-family: var(--font-family);
 }
 
+/*! Да котсыль, но я не понимаю, почему в моменте React Flow стал переопределять некоторые стили */
+
+.react-flow__node-group {
+  border: 2px solid #555 !important;
+  border-radius: 12px !important;
+  z-index: -1 !important; 
+}
+

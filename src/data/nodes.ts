@@ -3714,10 +3714,10 @@ export const nodes: Node[] = [
 {
   id: 'Протон-К (п)',
   type: 'group',
-  position: { x: 3416, y: 2750 },
+  position: { x: 3216, y: 2750 },
   data: { title: 'Протон-К (п)' },
   style: {
-    width: '2050px',
+    width: '2250px',
     height: '240px',
     backgroundColor: '#1e1e1e',
     border: '2px solid #555',
@@ -3801,7 +3801,7 @@ export const nodes: Node[] = [
 {
   id: 'РД-275 (14Д14)',
   type: 'custom',
-  position: { x: 1830, y: 20 },
+  position: { x: 2030, y: 20 },
   data: {
       year: 1992,
     label: 'РД-275 (14Д14)',
@@ -4047,7 +4047,7 @@ export const nodes: Node[] = [
 {
   id: 'УР-100',
   type: 'group',
-  position: { x: 3316, y: 3270 },
+  position: { x: 3016, y: 3270 },
   data: { title: 'УР-100' },
   style: {
     width: '750px',
@@ -4532,7 +4532,7 @@ export const nodes: Node[] = [
   {
     id: 'timeline',
     type: 'timeline',
-    position: { x: 0, y: -300 },
+    position: { x: 0, y: -400 },
     data: {
       years: [
         {year: 1948, left: 0, width: 150 },

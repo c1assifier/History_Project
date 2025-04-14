@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 
 import { ThemeProvider } from '@/context/ThemeProvider'; 
@@ -10,7 +10,7 @@ const EngineDetails = lazy(() => import('@/pages/EngineDetails/EngineDetails.tsx
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             path="/"
@@ -31,7 +31,7 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
