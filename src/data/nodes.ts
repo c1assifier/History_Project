@@ -133,6 +133,90 @@ export const nodes: Node[] = [
   },
 
   {
+    id: 'ETHOLOX', position: { x: 200, y: 400}, type: 'custom',
+    data: {
+      year: 0,
+      label: 'ETHOLOX',
+      customStyle: {
+        backgroundColor: 'rgba(30, 255, 0, 0.28)',
+        border: '2px solid rgba(0, 255, 51, 0.4)',
+        width: '300px',
+        fontSize: '25px'
+      }
+    }
+  },
+
+  {
+    id: 'KEROLOX', position: { x: 200, y: 500}, type: 'custom',
+    data: {
+      year: 0,
+      label: 'KEROLOX',
+      customStyle: {
+        backgroundColor: 'rgba(255, 0, 0, 0.28)',
+        border: '2px solid rgba(255, 0, 0, 0.4)',
+        width: '300px',
+        fontSize: '25px'
+      }
+    }
+  },
+
+  {
+    id: 'HYDROLOX', position: { x: 200, y: 600}, type: 'custom',
+    data: {
+      year: 0,
+      label: 'HYDROLOX',
+      customStyle: {
+        backgroundColor: 'rgba(0, 255, 255, 0.28)',
+        border: '2px solid rgba(0, 255, 255, 0.4)',
+        width: '300px',
+        fontSize: '25px'
+      }
+    }
+  },
+
+  {
+    id: 'TRIPROPELLANT', position: { x: 200, y: 700}, type: 'custom',
+    data: {
+      year: 0,
+      label: 'TRIPROPELLANT',
+      customStyle: {
+        backgroundColor: 'rgba(255, 255, 0, 0.15)',
+        border: '2px solid rgba(255, 255, 0, 0.5)', 
+        width: '300px',
+        fontSize: '25px'
+      }
+    }
+  },
+
+  {
+    id: 'HYPERGOLIC', position: { x: 200, y: 800}, type: 'custom',
+    data: {
+      year: 0,
+      label: 'HYPERGOLIC',
+      customStyle: {
+        backgroundColor: 'rgba(255, 140, 0, 0.2)',
+        border: '2px solid rgba(255, 140, 0, 0.4)',
+        width: '300px',
+        fontSize: '25px'
+      }
+    }
+  },
+
+  {
+    id: 'EXOTIC FUEL', position: { x: 200, y: 900}, type: 'custom',
+    data: {
+      year: 0,
+      label: 'EXOTIC FUEL',
+      customStyle: {
+        backgroundColor: 'rgba(225, 0, 255, 0.28)',
+        border: '2px solid rgba(234, 0, 255, 0.4)',
+        width: '300px',
+        fontSize: '25px'
+      }
+    }
+  },
+
+  {
     id: 'Проект-Т1', type: 'group', position: { x: 950, y: 100 },
     data: { title: 'Проект Т-1' },
     style: {
@@ -2359,8 +2443,8 @@ export const nodes: Node[] = [
     shortDescription: 'Трёхкомпонентный двигатель на базе РД-0120 (11Д122; РО-200). Предполагалась установка на первую ступень РН Ангара и на многоразовую авиационно-космическую систему Лозино-Лозинского.',
     tooltipDirection: 'right',
     customStyle: {
-      backgroundColor: 'rgba(170, 255, 100, 0.15)',
-      border: '2px solid rgba(170, 255, 100, 0.4)',
+      backgroundColor: 'rgba(255, 255, 0, 0.15)',
+      border: '2px solid rgba(255, 255, 0, 0.5)',
     },
       fullDescription: 'Трехкомпонентный двигатель на базе РД-0120 (11Д122; РО-200). Предполагалась установка на первую ступень РН Ангара и на многоразовую авиационно-космическую систему Лозино-Лозинского. Двигатель на первом режиме работает на кислороде и керосине с небольшой добавкой водорода в газогенератор с тягой 204 тс и удельным импульсом тяги 417 с; на втором режиме - на кислороде и водороде с тягой 80 тс и удельным импульсом 453 с. Главное отличие двигателя: трехкомпонентный газогенератор и дополнительный керосиновый насос ТНА. Кислородно-водородный ТНА и камера сгорания остались без изменений. Годы разработки: 1993-1998.',
       images: [ZhRD_RD_0750],
@@ -4320,7 +4404,7 @@ export const nodes: Node[] = [
         backgroundColor: 'rgba(225, 0, 255, 0.28)',
         border: '2px solid rgba(234, 0, 255, 0.4)',
       },
-        fullDescription: 'Серийно не производился. Предназначался для ракеты Р-12. Используемое топливо: скорее всего АК-27И (азотная кислота + азотный тетраоксид) + ТМ-185 (керосин + бензин). Работы проводились в 1952-1954 годах.[^2] Стал прототипом РД-212 (8Д41).',
+        fullDescription: 'Серийно не производился. Предназначался для ракеты Р-12. Используемое топливо: скорее всего АК-27И (азотная кислота + азотный тетраоксид) + ТМ-185 (керосин + бензин). Работы проводились в 1952-1954 годах. Стал прототипом РД-212 (8Д41).',
         images: [],
         table: {
                     headers: [],

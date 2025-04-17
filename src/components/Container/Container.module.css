@@ -3,4 +3,11 @@
   width: auto;
   height: 100vh;
   background-color: var(--color-bg-dark);
+  overflow-y: scroll;            
+  -ms-overflow-style: none;     
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;                 
 }

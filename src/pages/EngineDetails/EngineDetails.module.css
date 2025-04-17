@@ -14,7 +14,6 @@
   box-shadow: var(--box-shadow-lg);
   padding: 32px;
   max-width: var(--max-width-card);
-  max-height: var(--max-height-card);
   width: 100%;
   color: var(--color-text);
   display: flex;
@@ -50,17 +49,28 @@
 .imageBlock {
   flex-shrink: 1;
   display: flex;
+  width: 300px;
   flex-direction: column;
   gap: 10px;
   align-items: center;
 }
 
 .image {
-  max-width: var(--max-width-image);
+  /** backup */
+  /* max-width: var(--max-width-image);
   width: 100%;
   max-height: var(--max-width-image);
   border-radius: var(--radius-lg);
   object-fit: contain;
+  /* box-shadow: var(--box-shadow-md); */ 
+
+  display: block;                          
+  width: 100%;                             
+  height: auto;                            
+  max-width: var(--max-width-image);      
+  max-height: 500px;                      
+  border-radius: var(--radius-lg);
+  object-fit: contain;                    
   box-shadow: var(--box-shadow-md);
 }
 
