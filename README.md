@@ -11,7 +11,7 @@ History Project — это интерактивное веб-приложени�
 
 ## 🚀 Демо
 
-🔗 [Посмотреть демо](https://c1assifier.github.io/History_Project/#/engine/РД-701)
+🔗 [Посмотреть демо](https://c1assifier.github.io/History_Project/)
 
 ---
 
